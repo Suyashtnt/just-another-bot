@@ -1,0 +1,79 @@
+{
+	"name": "just-another-bot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "ts-node-dev --respawn --transpile-only --poll src/index.ts dev",
+		"lint": "prettier --write .",
+		"build": "tsc"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@commitlint/cli": "^11.0.0",
+		"@commitlint/config-angular": "^11.0.0",
+		"@types/luxon": "^1.25.0",
+		"@types/mongoose": "^5.10.1",
+		"@types/node": "^14.14.9",
+		"@types/node-fetch": "^2.5.7",
+		"@types/uuid": "^8.3.0",
+		"husky": "^4.3.0",
+		"lint-staged": "^10.5.2",
+		"prettier": "^2.2.0",
+		"ts-node": "^9.0.0",
+		"ts-node-dev": "^1.0.0",
+		"typescript": "^4.1.2"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"lint-staged": {
+		"*.ts": "prettier --write",
+		"*.js": "prettier --write"
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-angular"
+		],
+		"rules": {
+			"scope-case": [
+				2,
+				"always",
+				"pascal-case"
+			],
+			"type-enum": [
+				2,
+				"always",
+				[
+					"chore",
+					"build",
+					"ci",
+					"docs",
+					"feat",
+					"fix",
+					"perf",
+					"refactor",
+					"revert",
+					"style",
+					"test"
+				]
+			]
+		}
+	},
+	"dependencies": {
+		"discord-akairo": "^8.1.0",
+		"discord.js": "^12.5.0",
+		"imageapi.js": "^1.2.0",
+		"luxon": "^1.25.0",
+		"mongoose": "^5.10.16",
+		"node-fetch": "^2.6.1",
+		"reddit": "^1.2.1",
+		"uuid": "^8.3.1",
+		"yn": "^4.0.0"
+	}
+}

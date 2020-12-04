@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4cb7d5b9-31a7-4900-95d4-139cff3876bc" name="Default Changelist" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/just-another-bot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/dev.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/command.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/admin/dehoist.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/admin/deleteWarn.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/admin/setup.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/admin/superyeet.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/admin/warn.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/admin/warnings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/admin/yeet.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/emoji/downloadEmoji.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/emoji/moveEmoji.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/emoji/moveEmojis.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/info/about.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/info/help.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/info/ping.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/info/prefix.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/misc/embed.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/misc/fabric.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/misc/meme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/misc/profile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/misc/subreddit.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/listeners/cooldown.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/listeners/warning.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/guild.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1l6SiyJYQ9dak6qSVjMt7jkQx3s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="S:\projects\just-another-bot\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="S:\projects\just-another-bot\src\commands\admin" />
+      <recent name="S:\projects\just-another-bot\src\commands\misc" />
+      <recent name="S:\projects\just-another-bot\src\commands\info" />
+      <recent name="S:\projects\just-another-bot\src\commands\emoji" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <arguments value="dev" />
+      <node-interpreter value="project" />
+      <package-manager value="yarn" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cb7d5b9-31a7-4900-95d4-139cff3876bc" name="Default Changelist" comment="" />
+      <created>1606916181004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606916181004</updated>
+      <workItem from="1606916183225" duration="43000" />
+      <workItem from="1606916421128" duration="8000" />
+      <workItem from="1606916557281" duration="164000" />
+      <workItem from="1606916937630" duration="4948000" />
+      <workItem from="1606931703853" duration="1445000" />
+      <workItem from="1606983828035" duration="19000" />
+      <workItem from="1607012422208" duration="7763000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
