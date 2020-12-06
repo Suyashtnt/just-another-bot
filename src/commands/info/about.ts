@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { Message, MessageEmbed } from 'discord.js';
+import {Message, MessageEmbed} from 'discord.js';
 
 export default class AboutCommand extends Command {
 	constructor() {
@@ -13,8 +13,8 @@ export default class AboutCommand extends Command {
 		});
 	}
 
-	exec(msg: Message) {
-		msg.channel.send(
+	async exec(msg: Message) {
+		await msg.channel.send(
 			new MessageEmbed()
 				.setTitle('about')
 				.setDescription(

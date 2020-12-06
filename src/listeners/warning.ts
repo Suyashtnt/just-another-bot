@@ -1,6 +1,6 @@
-import { Listener } from 'discord-akairo';
-import { GuildChannel, GuildMember } from 'discord.js';
-import { Client } from '../client';
+import {Listener} from 'discord-akairo';
+import {GuildChannel, GuildMember} from 'discord.js';
+import {Client} from '../client';
 
 export default class WarningListener extends Listener {
 	constructor() {
@@ -38,16 +38,16 @@ export default class WarningListener extends Listener {
 				console.log(id);
 
 				if (!id) return;
-				const chnl: GuildChannel = (await member.guild.fetch()).channels.resolve(id);
+				const channel: GuildChannel = (await member.guild.fetch()).channels.resolve(id);
 
 				console.log('here');
 
-				if (!chnl) return;
+				if (!channel) return;
 
 				console.log('here');
 
-				if (chnl.isText())
-					chnl.send(`${member} has over 5 warnings in other servers!`);
+				if (channel.isText())
+					await channel.send(`${member} has over 5 warnings in other servers!`);
 			}
 		}
 	}

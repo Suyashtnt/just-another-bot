@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { Message, MessageEmbed } from 'discord.js';
+import {Message, MessageEmbed} from 'discord.js';
 import * as luxon from 'luxon';
 
 export default class HelpCommand extends Command {
@@ -56,11 +56,11 @@ export default class HelpCommand extends Command {
 				if (userPerms) {
 					//@ts-ignore
 					userPerms.forEach(function (item: string, index: number) {
-						const caseElementelement =
+						const caseElement =
 							item[0].toUpperCase() + item.slice(1).toLowerCase();
-						console.log(caseElementelement);
+						console.log(caseElement);
 
-						userPerms[index] = caseElementelement;
+						userPerms[index] = caseElement;
 					});
 				}
 				//@ts-ignore

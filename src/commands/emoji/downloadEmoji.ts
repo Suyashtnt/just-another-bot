@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { BaseGuildEmoji, Message } from 'discord.js';
+import {BaseGuildEmoji, Message} from 'discord.js';
 
 export default class DownloadEmojiCommand extends Command {
 	constructor() {
@@ -26,6 +26,6 @@ export default class DownloadEmojiCommand extends Command {
 				"emoji not found (default emojis don't work yet)",
 			);
 
-		msg.channel.send(`here: ${emoji.url} (click to download)`);
+		await msg.channel.send(`here: ${emoji.url} (click to download)`);
 	}
 }

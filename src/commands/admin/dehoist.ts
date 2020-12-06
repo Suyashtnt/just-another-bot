@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { Message } from 'discord.js';
+import {Message} from 'discord.js';
 
 export default class DehoistCommand extends Command {
 	constructor() {
@@ -30,11 +30,12 @@ export default class DehoistCommand extends Command {
 									? member.displayName.split('!')[1]
 									: member.displayName.split('! ')[1],
 							);
-						} catch (_) {}
+						} catch (_) {
+						}
 					}
 				}),
 			);
 		}
-		msg.channel.send('dehoisted!');
+		await msg.channel.send('dehoisted!');
 	}
 }

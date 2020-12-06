@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { Message } from 'discord.js';
+import {Message} from 'discord.js';
 
 export default class FabricCommand extends Command {
 	constructor() {
@@ -13,7 +13,7 @@ export default class FabricCommand extends Command {
 		});
 	}
 
-	exec(msg: Message) {
-		msg.channel.send('https://img.asie.pl/dTtp.mp4');
+	async exec(msg: Message) {
+		await msg.channel.send('https://img.asie.pl/dTtp.mp4');
 	}
 }

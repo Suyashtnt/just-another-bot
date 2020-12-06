@@ -1,6 +1,6 @@
-import { log } from 'console';
+import {log} from 'console';
 import Command from '../../command';
-import { Guild, Message } from 'discord.js';
+import {Guild, Message} from 'discord.js';
 import fetch from 'node-fetch';
 
 export default class MoveEmojiCommand extends Command {
@@ -31,7 +31,7 @@ export default class MoveEmojiCommand extends Command {
 		if (!member) return await msg.channel.send('you are not in that guild');
 		if (!member.permissions.has('MANAGE_EMOJIS'))
 			return await msg.channel.send('you cant move to that server!');
-		console.log((await msg.channel.send('transfering')).content);
+		console.log((await msg.channel.send('transferring')).content);
 
 		try {
 			await Promise.all(
@@ -53,9 +53,9 @@ export default class MoveEmojiCommand extends Command {
 				}),
 			);
 
-			msg.channel.send('done!');
+			await msg.channel.send('done!');
 		} catch (err) {
-			msg.channel.send('oh no! ' + err);
+			await msg.channel.send('oh no! ' + err);
 		}
 	}
 }

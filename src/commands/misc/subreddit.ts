@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { Message, MessageEmbed } from 'discord.js';
+import {Message, MessageEmbed} from 'discord.js';
 import * as api from 'imageapi.js';
 
 export default class RedditCommand extends Command {
@@ -32,6 +32,6 @@ export default class RedditCommand extends Command {
 				`from r/${args.subreddit} using imageapi.js | percentage may seem wrong but its what the reddit API says`,
 			);
 
-		msg.channel.send(embed);
+		await msg.channel.send(embed);
 	}
 }

@@ -2,45 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb7d5b9-31a7-4900-95d4-139cff3876bc" name="Default Changelist" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/just-another-bot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/dev.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/command.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/admin/dehoist.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/admin/deleteWarn.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/admin/setup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/admin/superyeet.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/admin/warn.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/admin/warnings.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/admin/yeet.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/emoji/downloadEmoji.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/emoji/moveEmoji.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/emoji/moveEmojis.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/info/about.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/info/help.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/info/ping.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/info/prefix.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/misc/embed.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/misc/fabric.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/misc/meme.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/misc/profile.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/misc/subreddit.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/listeners/cooldown.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/listeners/warning.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/guild.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.example.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/dehoist.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/dehoist.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/emoji/downloadEmoji.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/emoji/downloadEmoji.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/emoji/moveEmoji.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/emoji/moveEmoji.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/emoji/moveEmojis.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/emoji/moveEmojis.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/info/about.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/info/about.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/info/help.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/info/help.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/embed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/misc/embed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/fabric.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/misc/fabric.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/meme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/misc/meme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/subreddit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/misc/subreddit.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/warning.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/warning.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +36,6 @@
     <bower-package value="" />
     <bower.json value="" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1l6SiyJYQ9dak6qSVjMt7jkQx3s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -76,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -84,10 +55,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
     <property name="ts.external.directory.path" value="S:\projects\just-another-bot\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="S:\projects\just-another-bot\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="S:\projects\just-another-bot\src\commands\admin" />
       <recent name="S:\projects\just-another-bot\src\commands\misc" />
@@ -134,16 +108,44 @@
       <workItem from="1606916937630" duration="4948000" />
       <workItem from="1606931703853" duration="1445000" />
       <workItem from="1606983828035" duration="19000" />
-      <workItem from="1607012422208" duration="7763000" />
+      <workItem from="1607012422208" duration="7980000" />
+      <workItem from="1607110357566" duration="39000" />
+      <workItem from="1607259380954" duration="1200000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1607069449564</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607069449564</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="first commit" />
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

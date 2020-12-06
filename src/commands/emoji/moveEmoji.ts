@@ -1,6 +1,6 @@
-import { log } from 'console';
+import {log} from 'console';
 import Command from '../../command';
-import { BaseGuildEmoji, Guild, Message } from 'discord.js';
+import {BaseGuildEmoji, Guild, Message} from 'discord.js';
 import fetch from 'node-fetch';
 
 export default class MoveEmojiCommand extends Command {
@@ -35,12 +35,12 @@ export default class MoveEmojiCommand extends Command {
 		if (!member.permissions.has('MANAGE_EMOJIS'))
 			return msg.channel.send('you cant move to that server!');
 
-		console.log((await msg.channel.send('transfering')).content);
+		console.log((await msg.channel.send('transferring')).content);
 
 		const b64 = await (await fetch(val.url)).buffer();
 		console.log('here');
 
 		await guild.emojis.create(b64, val.name);
-		msg.channel.send('done!');
+		await msg.channel.send('done!');
 	}
 }
