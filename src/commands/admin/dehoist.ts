@@ -30,8 +30,7 @@ export default class DehoistCommand extends Command {
 									? member.displayName.split('!')[1]
 									: member.displayName.split('! ')[1],
 							);
-						} catch (_) {
-						}
+						} catch (_) {}
 					}
 				}),
 			);
