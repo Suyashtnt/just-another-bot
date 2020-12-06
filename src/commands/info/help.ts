@@ -1,6 +1,6 @@
 import Command from '../../command';
 import {Message, MessageEmbed} from 'discord.js';
-import * as luxon from 'luxon';
+import {formatMS} from "../../utils";
 
 export default class HelpCommand extends Command {
     constructor() {
@@ -21,19 +21,20 @@ export default class HelpCommand extends Command {
     }
 
     async exec(message: Message, args: any) {
-        message.channel.send(`Helping...`).then((msg) => {
+        message.channel.send(`Helping...`).then(msg => {
             if (!args.commandName) {
-                const _ = new MessageEmbed()
+                const embed = new MessageEmbed()
                     .setTitle("Here's your help!")
                     .setColor(`#00FF00`)
                     .setFooter('if a argument has a ? attached to it its optional');
-                this.handler.categories.each((category) => {
-                    _.addField(
+
+                this.handler.categories.map(category =>
+                    embed.addField(
                         category.id,
                         `${category
                             .map(
-                                (command) =>
-                                    `\`${this.client.guildSettings.get(
+                                async (command) =>
+                                    `\`${await this.client.guildSettings.get(
                                         message.guild.id,
                                         'prefix',
                                         'r!',
@@ -43,50 +44,45 @@ export default class HelpCommand extends Command {
                             )
                             .join('')}`,
                         true,
-                    );
-                });
-                message.channel.send(_);
+                    )
+                );
+
+                message.channel.send(embed);
                 msg.delete();
             } else {
                 const cmd = this.client.commandHandler.findCommand(args.commandName);
-                if (!cmd) return msg.channel.send('cannot find that command');
-                console.log(cmd.userPermissions);
+                if (!cmd) return msg.channel.send('I could not find that command');
 
                 // @ts-ignore
                 let userPerms: string[] = cmd.userPermissions ? cmd.userPermissions instanceof Array ? cmd.userPermissions : [cmd.userPermissions] : [];
-
                 const userPermsString = userPerms.map((item) => {
                     return item[0].toUpperCase() + item.slice(1).toLowerCase();
                 }).join(", ").replace("_", " ");
 
                 // @ts-ignore
                 let clientPerms: string[] = cmd.clientPermissions ? cmd.clientPermissions instanceof Array ? cmd.clientPermissions : [cmd.clientPermissions] : [];
+                const clientPermsString = clientPerms.map(item => item[0].toUpperCase() + item.slice(1).toLowerCase()).join(", ").replace("_", " ");
 
-                const clientPermsString = clientPerms.map((item) => {
-                    return item[0].toUpperCase() + item.slice(1).toLowerCase();
-                }).join(", ").replace("_", " ");
-
-                const _ = new MessageEmbed()
-                    .setTitle(`\`${cmd.aliases.join(', ')}\` - ${cmd.category}`)
-                    .addField('Usage: ', `**${cmd.description.usage}**`)
+                const embed = new MessageEmbed()
+                    .setTitle(`\`${cmd.aliases[0]}\` from \`${cmd.category}\``)
+                    .addField('Usage', cmd.description.usage)
+                    .addField("Aliases", `\`${cmd.aliases.join("` | `")}\``)
                     .addField(
-                        'Needed User Permissions:',
-                        `${userPermsString ? userPermsString : 'none'}`,
+                        'Needed User Permissions',
+                        userPermsString ? userPermsString : 'none',
                     )
                     .addField(
-                        'Needed Bot Permissions:',
+                        'Needed Bot Permissions',
                         `${clientPermsString ? clientPermsString : 'none'}`,
                     )
                     .addField(
                         'cooldown',
                         cmd.cooldown
-                            ? luxon.Duration.fromMillis(cmd.cooldown).toFormat(
-                            "'hours: ' hh ' | minutes: ' mm ' | seconds: ' ss",
-                            )
+                            ? formatMS(cmd.cooldown)
                             : 'none',
                     )
                     .setFooter('if a argument has a ? attached to it its optional');
-                message.channel.send(_);
+                message.channel.send(embed);
                 msg.delete();
             }
         });
