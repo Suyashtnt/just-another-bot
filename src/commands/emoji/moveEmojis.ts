@@ -1,4 +1,3 @@
-import {log} from 'console';
 import Command from '../../command';
 import {Guild, Message} from 'discord.js';
 import fetch from 'node-fetch';
@@ -14,24 +13,23 @@ export default class MoveEmojiCommand extends Command {
 				},
 			],
 			description: {
-				text: 'moves all emojis from this server to another',
+				text: '~~moves~~ _copies_ all emojis from this server to another',
 				usage: `moveEmojis [guildId]`,
 			},
 			clientPermissions: ['MANAGE_EMOJIS'],
 			category: 'emoji',
-			cooldown: 1000 * 60 * 60 * 24 * 7,
+			cooldown: 1000 * 60 * 60 * 24,
 		});
 	}
 
 	async exec(msg: Message, args: { guildToMoveTo: Guild }) {
 		if (!args.guildToMoveTo)
 			return msg.channel.send('that guild doesnt exist or im not in it!');
-		const member = await args.guildToMoveTo.members.fetch(msg.author);
-		log(member);
-		if (!member) return await msg.channel.send('you are not in that guild');
-		if (!member.permissions.has('MANAGE_EMOJIS'))
-			return await msg.channel.send('you cant move to that server!');
-		console.log((await msg.channel.send('transferring')).content);
+		const memberOnOtherServer = await args.guildToMoveTo.members.fetch(msg.author);
+		if (!memberOnOtherServer) return await msg.channel.send('you are not in that guild');
+		if (!memberOnOtherServer.permissions.has('MANAGE_EMOJIS'))
+			return await msg.channel.send('you cant copy to that server!');
+		console.log((await msg.channel.send('transferring. This may take up to an hour bc rate limiting.')).content);
 
 		try {
 			await Promise.all(
@@ -49,7 +47,6 @@ export default class MoveEmojiCommand extends Command {
 				).map(async (emoji) => {
 					await args.guildToMoveTo.emojis
 						.create(emoji.emoji, emoji.name)
-						.then(() => log('done'));
 				}),
 			);
 

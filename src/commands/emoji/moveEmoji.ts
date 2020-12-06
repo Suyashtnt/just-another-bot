@@ -18,7 +18,7 @@ export default class MoveEmojiCommand extends Command {
 				},
 			],
 			description: {
-				text: 'moves an emoji to another server',
+				text: '~~moves~~ _copies_ an emoji to another server',
 				usage: `moveEmoji [emoji] [guildId]`,
 			},
 			category: 'emoji',
@@ -33,7 +33,7 @@ export default class MoveEmojiCommand extends Command {
 		log(member);
 		if (!member) return msg.channel.send('you are not in that guild');
 		if (!member.permissions.has('MANAGE_EMOJIS'))
-			return msg.channel.send('you cant move to that server!');
+			return msg.channel.send('you cant copy to that server!');
 
 		console.log((await msg.channel.send('transferring')).content);
 
