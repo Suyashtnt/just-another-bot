@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {Message, MessageEmbed} from 'discord.js';
+import { Message, MessageEmbed } from 'discord.js';
 
 export default class AboutCommand extends Command {
 	constructor() {
@@ -20,6 +20,6 @@ export default class AboutCommand extends Command {
 				.setDescription(
 					'A bot for a bot jam hosted by [salvage](https://discord.gg/XSCH8vFFqs). Its mainly focused on emojis and fun stuff but has some other things aswell.',
 				),
-		)
+		);
 	}
 }

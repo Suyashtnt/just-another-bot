@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {Message} from 'discord.js';
+import { Message } from 'discord.js';
 
 export default class PrefixCommand extends Command {
 	constructor() {

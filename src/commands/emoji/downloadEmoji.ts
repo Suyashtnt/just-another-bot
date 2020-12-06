@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {BaseGuildEmoji, Message} from 'discord.js';
+import { BaseGuildEmoji, Message } from 'discord.js';
 
 export default class DownloadEmojiCommand extends Command {
 	constructor() {

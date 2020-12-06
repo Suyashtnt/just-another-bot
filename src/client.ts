@@ -1,9 +1,4 @@
-import {
-	AkairoClient,
-	CommandHandler,
-	ListenerHandler,
-	MongooseProvider,
-} from 'discord-akairo';
+import { AkairoClient, CommandHandler, ListenerHandler, MongooseProvider } from 'discord-akairo';
 import mongoose from 'mongoose';
 import yn from 'yn';
 import config from './config';
@@ -32,7 +27,6 @@ export class Client extends AkairoClient {
 			ignoreCooldown: (msg) => {
 				if (msg.author.id === this.ownerID) return true;
 				return process.argv.slice(2)[0] === 'dev';
-
 			},
 			defaultCooldown: 1000,
 		});

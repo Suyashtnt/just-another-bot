@@ -1,3 +1,6 @@
 node_modules
 dist
 src/config.ts
+/.idea/dataSources.xml
+/.idea/dataSources.local.xml
+/.idea/dataSources/7b905dca-c5b4-49a1-a9a9-38f1c9c51d83.xml

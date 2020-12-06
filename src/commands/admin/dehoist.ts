@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {Message} from 'discord.js';
+import { Message } from 'discord.js';
 
 export default class DehoistCommand extends Command {
 	constructor() {
@@ -20,7 +20,7 @@ export default class DehoistCommand extends Command {
 	async exec(msg: Message) {
 		const members = await msg.guild.members.fetch();
 
-		for (let i = 0; i <4; i++) {
+		for (let i = 0; i < 4; i++) {
 			await Promise.all(
 				members.map(async (member) => {
 					if (member.displayName.startsWith('!')) {

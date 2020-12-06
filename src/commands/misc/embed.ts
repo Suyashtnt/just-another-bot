@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {Message, MessageEmbed} from 'discord.js';
+import { Message, MessageEmbed } from 'discord.js';
 
 export default class EmbedCommand extends Command {
 	constructor() {

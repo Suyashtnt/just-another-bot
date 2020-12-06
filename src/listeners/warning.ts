@@ -1,6 +1,6 @@
-import {Listener} from 'discord-akairo';
-import {GuildChannel, GuildMember} from 'discord.js';
-import {Client} from '../client';
+import { Listener } from 'discord-akairo';
+import { GuildChannel, GuildMember } from 'discord.js';
+import { Client } from '../client';
 
 export default class WarningListener extends Listener {
 	constructor() {
@@ -38,7 +38,9 @@ export default class WarningListener extends Listener {
 				console.log(id);
 
 				if (!id) return;
-				const channel: GuildChannel = (await member.guild.fetch()).channels.resolve(id);
+				const channel: GuildChannel = (await member.guild.fetch()).channels.resolve(
+					id,
+				);
 
 				console.log('here');
 
