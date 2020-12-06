@@ -21,24 +21,26 @@ export default class HelpCommand extends Command {
     }
 
     async exec(message: Message, args: any) {
-        message.channel.send(`Helping...`).then(msg => {
+        message.channel.send(`Helping...`).then(async msg => {
             if (!args.commandName) {
                 const embed = new MessageEmbed()
                     .setTitle("Here's your help!")
                     .setColor(`#00FF00`)
                     .setFooter('if a argument has a ? attached to it its optional');
 
+                const prefix = await this.client.guildSettings.get(
+                    message.guild.id,
+                    'prefix',
+                    'r!',
+                )
+
                 this.handler.categories.map(category =>
                     embed.addField(
                         category.id,
                         `${category
                             .map(
-                                async (command) =>
-                                    `\`${await this.client.guildSettings.get(
-                                        message.guild.id,
-                                        'prefix',
-                                        'r!',
-                                    )}${command.description.usage}\` - ${
+                                command =>
+                                    `\`${prefix}${command.description.usage}\` - ${
                                         command.description.text
                                     }\n\n`,
                             )
@@ -47,8 +49,8 @@ export default class HelpCommand extends Command {
                     )
                 );
 
-                message.channel.send(embed);
-                msg.delete();
+                await message.channel.send(embed);
+                await msg.delete();
             } else {
                 const cmd = this.client.commandHandler.findCommand(args.commandName);
                 if (!cmd) return msg.channel.send('I could not find that command');
@@ -82,8 +84,8 @@ export default class HelpCommand extends Command {
                             : 'none',
                     )
                     .setFooter('if a argument has a ? attached to it its optional');
-                message.channel.send(embed);
-                msg.delete();
+                await message.channel.send(embed);
+                await msg.delete();
             }
         });
     }
