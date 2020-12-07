@@ -34,7 +34,7 @@ export default class BioCommand extends Command {
 		msg,
 		args: {
 			type: 'get' | 'set';
-			userOrBio: User | String;
+			userOrBio: User | string;
 		},
 	) {
 		if (args.userOrBio instanceof User) {

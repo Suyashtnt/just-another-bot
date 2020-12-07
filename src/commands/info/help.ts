@@ -13,19 +13,19 @@ export default class HelpCommand extends Command {
 			],
 			description: {
 				text: 'Displays this message',
-				usage: `help [commandname?]`,
+				usage: 'help [commandname?]',
 			},
 			category: 'info',
 			cooldown: 1000 * 60,
 		});
 	}
 
-	async exec(message: Message, args: any) {
-		message.channel.send(`Helping...`).then(async (msg) => {
+	async exec(message: Message, args: { commandName: string }) {
+		message.channel.send('Helping...').then(async (msg) => {
 			if (!args.commandName) {
 				const embed = new MessageEmbed()
 					.setTitle("Here's your help!")
-					.setColor(`#00FF00`)
+					.setColor('#00FF00')
 					.setFooter('if a argument has a ? attached to it its optional');
 
 				const prefix = await this.client.guildSettings.get(
@@ -53,8 +53,9 @@ export default class HelpCommand extends Command {
 				const cmd = this.client.commandHandler.findCommand(args.commandName);
 				if (!cmd) return msg.channel.send('I could not find that command');
 
+				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 				// @ts-ignore
-				let userPerms: string[] = cmd.userPermissions
+				const userPerms: string[] = cmd.userPermissions
 					? cmd.userPermissions instanceof Array
 						? cmd.userPermissions
 						: [cmd.userPermissions]
@@ -66,8 +67,9 @@ export default class HelpCommand extends Command {
 					.join(', ')
 					.replace('_', ' ');
 
+				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 				// @ts-ignore
-				let clientPerms: string[] = cmd.clientPermissions
+				const clientPerms: string[] = cmd.clientPermissions
 					? cmd.clientPermissions instanceof Array
 						? cmd.clientPermissions
 						: [cmd.clientPermissions]

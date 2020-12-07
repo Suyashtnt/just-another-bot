@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb7d5b9-31a7-4900-95d4-139cff3876bc" name="Default Changelist" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/plugins/@yarnpkg/plugin-interactive-tools.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/releases/yarn-berry.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/dehoist.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/dehoist.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/info/help.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/info/help.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/bio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/misc/bio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/embed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/misc/embed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/perms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/perms.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +42,9 @@
     <bower-package value="" />
     <bower.json value="" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1l6SiyJYQ9dak6qSVjMt7jkQx3s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -34,6 +52,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -47,7 +66,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="S:\projects\just-another-bot\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -153,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607282085638</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="use my code style">
+      <created>1607282465786</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607282465786</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +208,10 @@
     <MESSAGE value="cleanup help.ts" />
     <MESSAGE value="fix help.ts" />
     <MESSAGE value="format and addition to .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="format and addition to .gitignore" />
+    <MESSAGE value="use my code style" />
+    <MESSAGE value="eslint and starting to head to yarn 2&#10;&#10;no PnP yet" />
+    <MESSAGE value="yarn 2&#10;&#10;no PnP yet. But this is gonna be :yeef**kinghaw:" />
+    <option name="LAST_COMMIT_MESSAGE" value="yarn 2&#10;&#10;no PnP yet. But this is gonna be :yeef**kinghaw:" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

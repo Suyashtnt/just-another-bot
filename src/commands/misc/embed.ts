@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { Message, MessageEmbed } from 'discord.js';
+import { ColorResolvable, Message, MessageEmbed } from 'discord.js';
 
 export default class EmbedCommand extends Command {
 	constructor() {
@@ -27,14 +27,17 @@ export default class EmbedCommand extends Command {
 			separator: '|',
 			description: {
 				text: 'creates an embed',
-				usage: `embed [title] | [desc?] | [colour?] | [image?]`,
+				usage: 'embed [title] | [desc?] | [colour?] | [image?]',
 			},
 			category: 'misc',
 			cooldown: 1000 * 60,
 		});
 	}
 
-	async exec(msg: Message, args: any) {
+	async exec(
+		msg: Message,
+		args: { title: string; desc: string; colour: ColorResolvable; image: string },
+	) {
 		const embed = new MessageEmbed()
 			.setTitle(args.title)
 			.setDescription(args.desc)

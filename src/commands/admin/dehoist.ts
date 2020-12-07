@@ -9,7 +9,7 @@ export default class DehoistCommand extends Command {
 			userPermissions: ['ADMINISTRATOR'],
 			description: {
 				text: 'removes `!` from the start of all users',
-				usage: `dehoist`,
+				usage: 'dehoist',
 			},
 			category: 'admin',
 			cooldown: 1000 * 60 * 60 * 24,
@@ -30,7 +30,9 @@ export default class DehoistCommand extends Command {
 									? member.displayName.split('!')[1]
 									: member.displayName.split('! ')[1],
 							);
-						} catch (_) {}
+						} catch (_) {
+							// i mean do you need to know the error?
+						}
 					}
 				}),
 			);
