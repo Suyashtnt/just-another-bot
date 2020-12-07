@@ -321,13 +321,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mongoose@npm:^5.10.1":
-  version: 5.10.1
-  resolution: "@types/mongoose@npm:5.10.1"
+"@types/mongoose@npm:^5.10.2":
+  version: 5.10.2
+  resolution: "@types/mongoose@npm:5.10.2"
   dependencies:
     "@types/mongodb": "*"
     "@types/node": "*"
-  checksum: 2517d1e9b6563ffc94a34b44627404cd679458d33f8639b6b58acef4ee31036844fe4926e2e69813c8fd4d00edec89df65993c76a20f43db04303cddfaa2d1e6
+  checksum: 6fbf7dc7901093204cf08c6ffa1ab4e33c77a10a75ce5dc9bcc9346e9a9b914bc9ffe2de0b585548f6faef8883ca55189778aa78a1a1e31b4e114bd761aadcd9
   languageName: node
   linkType: hard
 
@@ -341,10 +341,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^14.14.9":
+"@types/node@npm:*":
   version: 14.14.9
   resolution: "@types/node@npm:14.14.9"
   checksum: df0405c708fa94831e7f71ed01cd6f859a38ab0daeae99e01afdd408905479f205556a43bafe5692c82cd126abbdc68baeb99b4b7d653c1480c289080b71622b
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^14.14.10":
+  version: 14.14.10
+  resolution: "@types/node@npm:14.14.10"
+  checksum: b793aa15e8c08df50d0f77dc0fe7a93bc2e09bfa5a424841d4dba045d6ae8503b7ffe89b773ffe197c9b637c898bb22e78442e21ff4b33414d35160d9c3f8a9b
   languageName: node
   linkType: hard
 
@@ -1095,6 +1102,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"create-require@npm:^1.1.0":
+  version: 1.1.1
+  resolution: "create-require@npm:1.1.1"
+  checksum: babd307893abfb26d77ae11cb9d6b6cfa6d18c9cee435cf70b5a3fb44aa8d90c9ec26ea89cbb16e0a94b8d34f5fcaee164b90ed526cdd3158955673ab9652d01
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
@@ -1248,9 +1262,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord.js@npm:^12.5.0":
-  version: 12.5.0
-  resolution: "discord.js@npm:12.5.0"
+"discord.js@npm:^12.5.1":
+  version: 12.5.1
+  resolution: "discord.js@npm:12.5.1"
   dependencies:
     "@discordjs/collection": ^0.1.6
     "@discordjs/form-data": ^3.0.1
@@ -1260,7 +1274,7 @@ __metadata:
     setimmediate: ^1.0.5
     tweetnacl: ^1.0.3
     ws: ^7.3.1
-  checksum: a59e17abe4b178ec54f11903afe8fef34ecf147c594e1083f637cd914ee93b90873218610e30be288c0b1261065268e8301dc6148fd97374ec6a9313ff7aa443
+  checksum: 18850040f3b945b0d60a89ea38df31d1abcca2879abc171b3a44d0b9ce163e0ad0a0119e0e417630cf56609483af6c4b5235f77cc84ae1bee0a2869aff25fae3
   languageName: node
   linkType: hard
 
@@ -1984,9 +1998,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"husky@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "husky@npm:4.3.0"
+"husky@npm:^4.3.5":
+  version: 4.3.5
+  resolution: "husky@npm:4.3.5"
   dependencies:
     chalk: ^4.0.0
     ci-info: ^2.0.0
@@ -2001,7 +2015,7 @@ fsevents@~2.1.2:
   bin:
     husky-run: bin/run.js
     husky-upgrade: lib/upgrader/bin.js
-  checksum: c212d9732de84cbd7c25d907b874f7844503f85e28c0512518cddbac9854c54f1c569e81c5b70387f1e3c27d35c2b43256c811cf06fdad066565c5fc178f33f7
+  checksum: d15ccb44da39432bb5db1cd0c81eb169be25863bd4ff998c9ecf0c4e769e7d3fb547ed5044ae8b77050303841264bbe48aedf066afb1ee394bcbea4469e2d684
   languageName: node
   linkType: hard
 
@@ -2019,12 +2033,12 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"imageapi.js@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "imageapi.js@npm:1.2.0"
+"imageapi.js@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "imageapi.js@npm:1.2.1"
   dependencies:
     node-fetch: ^2.6.1
-  checksum: 77c5eb989972a627b0e278897d94d1f22158c498e552fc023fb9bf2d7d8de9c73d02c5cdf2d21f28314bb528bea50b46bec3aef22125920f9703c8ce93ea91e9
+  checksum: a3aec4d20ca600dfbe4c5044204c0b444de19bf44fd4abf80e72e7e51b4a6e1a71d3d897525577aa0b46e9cdbaf5db5dfaf87f2de18ade37121f0884d744e719
   languageName: node
   linkType: hard
 
@@ -2342,23 +2356,23 @@ fsevents@~2.1.2:
     "@commitlint/cli": ^11.0.0
     "@commitlint/config-angular": ^11.0.0
     "@types/luxon": ^1.25.0
-    "@types/mongoose": ^5.10.1
-    "@types/node": ^14.14.9
+    "@types/mongoose": ^5.10.2
+    "@types/node": ^14.14.10
     "@types/node-fetch": ^2.5.7
     "@types/uuid": ^8.3.0
     "@typescript-eslint/eslint-plugin": ^4.9.0
     "@typescript-eslint/parser": ^4.9.0
     discord-akairo: ^8.1.0
-    discord.js: ^12.5.0
+    discord.js: ^12.5.1
     eslint: ^7.15.0
-    husky: ^4.3.0
-    imageapi.js: ^1.2.0
-    lint-staged: ^10.5.2
+    husky: ^4.3.5
+    imageapi.js: ^1.2.1
+    lint-staged: ^10.5.3
     luxon: ^1.25.0
-    mongoose: ^5.10.16
+    mongoose: 5.10.19
     node-fetch: ^2.6.1
     reddit: ^1.2.1
-    ts-node: ^9.0.0
+    ts-node: ^9.1.0
     ts-node-dev: ^1.0.0
     typescript: ^4.1.2
     uuid: ^8.3.1
@@ -2397,9 +2411,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^10.5.2":
-  version: 10.5.2
-  resolution: "lint-staged@npm:10.5.2"
+"lint-staged@npm:^10.5.3":
+  version: 10.5.3
+  resolution: "lint-staged@npm:10.5.3"
   dependencies:
     chalk: ^4.1.0
     cli-truncate: ^2.1.0
@@ -2418,7 +2432,7 @@ fsevents@~2.1.2:
     stringify-object: ^3.3.0
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 285a0da521786db1a2a98fe875b8c330e9a607fd2d3ff687b6ce4dfa22b38acfd5ab9aaf556c6a4a34164875062a388647fcca9538a70bd01485a5d804a594f1
+  checksum: cd34098f62feac51a8eb6a6abff6a15be292bfcac55d04c3e9f21c3ea8e472b94fac27507e4d087f0c6e159881216cd22bdf02d2b8d21cd8d0ffdf8ed00875b4
   languageName: node
   linkType: hard
 
@@ -2771,9 +2785,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"mongoose@npm:5.10.16, mongoose@npm:^5.10.16":
-  version: 5.10.16
-  resolution: "mongoose@npm:5.10.16"
+"mongoose@npm:5.10.19":
+  version: 5.10.19
+  resolution: "mongoose@npm:5.10.19"
   dependencies:
     bson: ^1.1.4
     kareem: 2.3.1
@@ -2786,7 +2800,7 @@ fsevents@~2.1.2:
     safe-buffer: 5.2.1
     sift: 7.0.1
     sliced: 1.0.1
-  checksum: 1fd2e70f14290f08518bf667ac504a9760a9b0a466f4e1d77ec402a550807a2f543c58ab94bc7ee548b97c57529c291c999ea84ce0653e40bed94c2a0ff8328c
+  checksum: 7a469433036adfb97406fc7a9f1f8135ede947b00d1a01e7064dfc86520ec58e1b1b91291bbe98c1722846d82c0a221dc1edc166fbb07d0ba029f900e952db6c
   languageName: node
   linkType: hard
 
@@ -4187,6 +4201,27 @@ fsevents@~2.1.2:
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
   checksum: 49d2ab087fc4b93f0a292e426ea6d242a80d1a4809ac008758bb0170aea1a85cd4182792c1d70889285fe5328cd8bd1ffb1e5108d1c4f31c39dbe9151ea4cabe
+  languageName: node
+  linkType: hard
+
+"ts-node@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "ts-node@npm:9.1.0"
+  dependencies:
+    arg: ^4.1.0
+    create-require: ^1.1.0
+    diff: ^4.0.1
+    make-error: ^1.1.1
+    source-map-support: ^0.5.17
+    yn: 3.1.1
+  peerDependencies:
+    typescript: ">=2.7"
+  bin:
+    ts-node: dist/bin.js
+    ts-node-script: dist/bin-script.js
+    ts-node-transpile-only: dist/bin-transpile.js
+    ts-script: dist/bin-script-deprecated.js
+  checksum: 4735671aabf8c5f3165683b481884f5080cb2d911771c8da368f8565d5f8d769ee6f504d2d1357429ceea076f9eb9ea6714c13a46d74b3d21c5c119a6e4c27fc
   languageName: node
   linkType: hard
 
