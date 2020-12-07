@@ -28,10 +28,7 @@ export class Client extends AkairoClient {
 				}
 				return prefix;
 			},
-			ignoreCooldown: (msg) => {
-				if (msg.author.id === this.ownerID) return true;
-				return process.argv.slice(2)[0] === 'dev';
-			},
+			ignoreCooldown: (msg) => process.argv.slice(2)[0] === 'dev' || msg.author.id === this.ownerID,
 			defaultCooldown: 1000,
 		});
 
