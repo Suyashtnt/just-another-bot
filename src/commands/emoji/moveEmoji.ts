@@ -19,7 +19,7 @@ export default class MoveEmojiCommand extends Command {
 			],
 			description: {
 				text: '~~moves~~ _copies_ an emoji to another server',
-				usage: `moveEmoji [emoji] [guildId]`,
+				usage: 'moveEmoji [emoji] [guildId]',
 			},
 			category: 'emoji',
 			cooldown: 5000,

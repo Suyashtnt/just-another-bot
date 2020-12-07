@@ -27,8 +27,8 @@ export default class DeleteWarnCommand extends Command {
 	async exec(msg, args: { user: GuildMember; uuid: string }) {
 		try {
 			const warnings: {
-				guildId: String;
-				msg: String;
+				guildId: string;
+				msg: string;
 				id: string;
 			}[] = await this.client.userSettings.get(args.user.id, 'warns', null);
 			if (!warnings) return await msg.channel.send("that user doesn't exist lol");
@@ -36,7 +36,7 @@ export default class DeleteWarnCommand extends Command {
 			if (newWarns === warnings)
 				return await msg.channel.send('cannot find that warning!');
 			await this.client.userSettings.set(args.user.id, 'warns', newWarns);
-			return msg.channel.send(`removed!`);
+			return msg.channel.send('removed!');
 		} catch (e) {
 			await msg.channel.send(`oh no! ${e}`);
 			console.log(e);

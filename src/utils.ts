@@ -1,5 +1,5 @@
 export function formatMS(ms: number) {
-	const times: object = {
+	const times = {
 		week: Math.floor(ms / (1000 * 60 * 60 * 24 * 7)),
 		day: Math.floor(ms / (1000 * 60 * 60 * 24)),
 		hour: Math.floor((ms / (1000 * 60 * 60)) % 24),

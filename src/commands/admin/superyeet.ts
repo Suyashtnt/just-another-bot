@@ -19,7 +19,7 @@ export default class SuperYeetCommand extends Command {
 			],
 			description: {
 				text: 'bans a user',
-				usage: `superyeet [user] [reason?]`,
+				usage: 'superyeet [user] [reason?]',
 			},
 			clientPermissions: ['BAN_MEMBERS'],
 			userPermissions: ['BAN_MEMBERS'],
@@ -33,6 +33,6 @@ export default class SuperYeetCommand extends Command {
 			reason,
 		});
 
-		msg.channel.send('BANNED with reason: ' + reason);
+		await msg.channel.send(`BANNED with reason: ${reason}`);
 	}
 }

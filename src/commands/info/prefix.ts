@@ -14,14 +14,19 @@ export default class PrefixCommand extends Command {
 			userPermissions: ['ADMINISTRATOR'],
 			description: {
 				text: 'sets the bots prefix. If `prefix` is empty it sets it to `r!`',
-				usage: `prefix [prefix?]`,
+				usage: 'prefix [prefix?]',
 			},
 			category: 'misc',
 			channel: 'guild',
 		});
 	}
 
-	async exec(msg: Message, args: any) {
+	async exec(
+		msg: Message,
+		args: {
+			prefix: string;
+		},
+	) {
 		const oldPrefix = this.client.guildSettings.get(msg.guild.id, 'prefix', 'r!');
 
 		await this.client.guildSettings.set(msg.guild.id, 'prefix', args.prefix);

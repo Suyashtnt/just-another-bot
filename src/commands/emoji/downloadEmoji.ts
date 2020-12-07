@@ -13,7 +13,7 @@ export default class DownloadEmojiCommand extends Command {
 			],
 			description: {
 				text: 'Sends the link of an emoji in this guild',
-				usage: `downloadEmoji [emoji]`,
+				usage: 'downloadEmoji [emoji]',
 			},
 			category: 'emoji',
 			channel: 'guild',

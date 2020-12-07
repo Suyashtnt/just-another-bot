@@ -21,7 +21,7 @@ export default class WarningsCommand extends Command {
 	}
 
 	async exec(msg, args: { user: GuildMember }) {
-		const warnings: { guildId: String; msg: String; id: string }[] = await (
+		const warnings: { guildId: string; msg: string; id: string }[] = await (
 			await this.client.userSettings.get(args.user.user.id, 'warns', [])
 		).filter((val) => val.guildId === args.user.guild.id);
 		console.log(JSON.stringify(warnings));
@@ -29,12 +29,10 @@ export default class WarningsCommand extends Command {
 			`warnings for ${args.user.displayName}`,
 		);
 
-		for (let warning of warnings) {
-			console.log(JSON.stringify(warning));
-
+		for (const warning of warnings) {
 			embed.addField(warning.id, warning.msg, false);
 		}
 
-		msg.channel.send(embed);
+		await msg.channel.send(embed);
 	}
 }

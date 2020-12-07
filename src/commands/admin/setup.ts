@@ -45,6 +45,6 @@ export default class SetupCommand extends Command {
 		} catch (err) {
 			return msg.channel.send(`FAILED! ${err}`);
 		}
-		msg.channel.send('done!');
+		await msg.channel.send('done!');
 	}
 }

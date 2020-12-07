@@ -7,7 +7,7 @@ export default class PingCommand extends Command {
 			aliases: ['ping', 'p'],
 			description: {
 				text: 'gets the bots bing',
-				usage: `ping`,
+				usage: 'ping',
 			},
 			category: 'info',
 		});

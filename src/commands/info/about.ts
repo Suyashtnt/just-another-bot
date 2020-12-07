@@ -7,7 +7,7 @@ export default class AboutCommand extends Command {
 			aliases: ['about'],
 			description: {
 				text: 'about this bot',
-				usage: `about`,
+				usage: 'about',
 			},
 			category: 'info',
 		});

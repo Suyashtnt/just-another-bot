@@ -14,7 +14,7 @@ export default class MoveEmojiCommand extends Command {
 			],
 			description: {
 				text: '~~moves~~ _copies_ all emojis from this server to another',
-				usage: `moveEmojis [guildId]`,
+				usage: 'moveEmojis [guildId]',
 			},
 			clientPermissions: ['MANAGE_EMOJIS'],
 			category: 'emoji',
