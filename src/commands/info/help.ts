@@ -13,7 +13,7 @@ export default class HelpCommand extends Command {
 			],
 			description: {
 				text: 'Displays this message',
-				usage: 'help [commandname?]',
+				usage: 'help [commandName?]',
 			},
 			category: 'info',
 			cooldown: 1000 * 60,

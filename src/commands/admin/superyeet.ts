@@ -3,8 +3,8 @@ import { GuildMember, Message } from 'discord.js';
 
 export default class SuperYeetCommand extends Command {
 	constructor() {
-		super('superyeet', {
-			aliases: ['ban', 'sy', 'superyeet'],
+		super('superYeet', {
+			aliases: ['ban', 'sy', 'superYeet'],
 			args: [
 				{
 					id: 'user',
@@ -19,7 +19,7 @@ export default class SuperYeetCommand extends Command {
 			],
 			description: {
 				text: 'bans a user',
-				usage: 'superyeet [user] [reason?]',
+				usage: 'superYeet [user] [reason?]',
 			},
 			clientPermissions: ['BAN_MEMBERS'],
 			userPermissions: ['BAN_MEMBERS'],

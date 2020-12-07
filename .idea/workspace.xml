@@ -10,17 +10,15 @@
       <change beforePath="$PROJECT_DIR$/src/commands/admin/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/setup.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/admin/superyeet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/superyeet.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/admin/warn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/warn.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/admin/warnings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/warnings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/yeet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/yeet.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/emoji/downloadEmoji.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/emoji/downloadEmoji.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/emoji/moveEmoji.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/emoji/moveEmoji.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/emoji/moveEmojis.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/emoji/moveEmojis.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/info/about.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/info/about.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/info/help.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/info/help.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/info/ping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/info/ping.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/info/prefix.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/info/prefix.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/profile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/misc/profile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/subreddit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/misc/subreddit.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.example.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.example.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/listeners/perms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/perms.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/warning.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/warning.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +64,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="S:\projects\just-another-bot\node_modules\typescript\lib" />
   </component>
@@ -179,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607282465786</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="chore(Codebase): eslint">
+      <created>1607327272428</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607327272428</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

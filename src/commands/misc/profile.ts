@@ -8,7 +8,7 @@ export default class ProfileCommand extends Command {
 
 			description: {
 				text: 'gets info on your profile',
-				usage: `profile`,
+				usage: 'profile',
 			},
 			category: 'misc',
 			channel: 'guild',

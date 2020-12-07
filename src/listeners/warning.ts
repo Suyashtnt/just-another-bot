@@ -20,7 +20,7 @@ export default class WarningListener extends Listener {
 		console.log(guildWarning);
 
 		if (guildWarning) {
-			const warnings: any[] = await (this.client as Client).userSettings.get(
+			const warnings = await (this.client as Client).userSettings.get(
 				member.user.id,
 				'warns',
 				[],

@@ -18,7 +18,7 @@ export default class AboutCommand extends Command {
 			new MessageEmbed()
 				.setTitle('about')
 				.setDescription(
-					'A bot for a bot jam hosted by [salvage](https://discord.gg/XSCH8vFFqs). Its mainly focused on emojis and fun stuff but has some other things aswell.',
+					'A bot for a bot jam hosted by [salvage](https://discord.gg/XSCH8vFFqs). Its mainly focused on emojis and fun stuff but has some other things as well.',
 				),
 		);
 	}

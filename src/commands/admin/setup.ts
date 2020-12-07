@@ -13,7 +13,7 @@ export default class SetupCommand extends Command {
 						start: 'what is your main/welcoming channel?',
 						retries: 3,
 						retry:
-							'that aint a channel in this server or not a channel at all. Please try again.',
+							"that isn't a channel in this server or not a channel at all. Please try again.",
 					},
 				},
 				{
@@ -22,7 +22,7 @@ export default class SetupCommand extends Command {
 					prompt: {
 						start:
 							'would you like to see how many warns a user has before they enter this server?',
-						retry: 'thats not a boolean. Please type `yes` or `no`',
+						retry: "that's not a boolean. Please type `yes` or `no`",
 						retries: 3,
 					},
 				},

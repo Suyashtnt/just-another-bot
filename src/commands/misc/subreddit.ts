@@ -20,7 +20,12 @@ export default class RedditCommand extends Command {
 		});
 	}
 
-	async exec(msg: Message, args: any) {
+	async exec(
+		msg: Message,
+		args: {
+			subreddit: string;
+		},
+	) {
 		const post = await api.advanced(args.subreddit);
 		const embed = new MessageEmbed()
 			.setTitle(post.title)
