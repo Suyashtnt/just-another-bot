@@ -1,5 +1,5 @@
-import { MongooseProvider } from 'discord-akairo';
-import { Client } from './client';
+import {MongooseProvider} from 'discord-akairo';
+import {Client} from './client';
 import config from './config';
 import guildModel from './models/guild';
 import userModel from './models/user';
@@ -10,5 +10,7 @@ import userModel from './models/user';
 		new MongooseProvider(guildModel),
 		new MongooseProvider(userModel),
 	);
-	await client.login(config.token).then(() => console.log('loaded'));
+
+	if (process.argv.slice(2)[0] === 'dev') console.log("in dev mode! Cooldowns are disabled")
+	await client.login(config.token).then(() => console.log(`loaded. In ${client.guilds.cache.size} servers`));
 })();

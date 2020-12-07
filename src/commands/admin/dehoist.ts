@@ -30,8 +30,8 @@ export default class DehoistCommand extends Command {
 									? member.displayName.split('!')[1]
 									: member.displayName.split('! ')[1],
 							);
-						} catch (_) {
-							// i mean do you need to know the error?
+						} catch (e) {
+							msg.channel.send(`Oh no! ${e}`)
 						}
 					}
 				}),

@@ -16,7 +16,6 @@ export default class MoveEmojiCommand extends Command {
 				text: 'copies all emojis from this server to another',
 				usage: 'moveEmojis `[guildId]`',
 			},
-			clientPermissions: ['MANAGE_EMOJIS'],
 			category: 'emoji',
 			cooldown: 1000 * 60 * 60 * 24,
 		});
@@ -58,7 +57,7 @@ export default class MoveEmojiCommand extends Command {
 
 			await msg.channel.send('done!');
 		} catch (err) {
-			await msg.channel.send('oh no! ' + err);
+			await msg.channel.send(`oh no! ${err}`);
 		}
 	}
 }

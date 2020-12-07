@@ -1,4 +1,4 @@
-import { AkairoClient, CommandHandler, ListenerHandler, MongooseProvider } from 'discord-akairo';
+import {AkairoClient, CommandHandler, ListenerHandler, MongooseProvider} from 'discord-akairo';
 import mongoose from 'mongoose';
 import yn from 'yn';
 import config from './config';
@@ -14,6 +14,10 @@ export class Client extends AkairoClient {
 	) {
 		super({
 			ownerID: '544194482527010836',
+		}, {
+			ws: {
+				intents: ['DIRECT_MESSAGES', 'GUILDS', "GUILD_MESSAGES", "GUILD_MEMBERS"]
+			}
 		});
 
 		this.commandHandler = new CommandHandler(this, {
