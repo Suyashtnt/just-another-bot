@@ -24,7 +24,7 @@ export default class HelpCommand extends Command {
 		message.channel.send('Helping...').then(async (msg) => {
 			if (!args.commandName) {
 				const embed = new MessageEmbed()
-					.setTitle("Here's your help!")
+					.setTitle('Here\'s your help!')
 					.setColor('#00FF00')
 					.setFooter('if a argument has a ? attached to it its optional');
 

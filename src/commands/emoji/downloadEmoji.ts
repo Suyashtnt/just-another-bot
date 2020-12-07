@@ -23,7 +23,7 @@ export default class DownloadEmojiCommand extends Command {
 	async exec(msg: Message, { emoji }: { emoji: BaseGuildEmoji }) {
 		if (!emoji)
 			return await msg.channel.send(
-				"emoji not found (default emojis don't work yet)",
+				'emoji not found (default emojis don\'t work yet)',
 			);
 
 		await msg.channel.send(`here: ${emoji.url} (click to download)`);

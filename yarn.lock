@@ -2357,7 +2357,6 @@ fsevents@~2.1.2:
     luxon: ^1.25.0
     mongoose: ^5.10.16
     node-fetch: ^2.6.1
-    prettier: ^2.2.0
     reddit: ^1.2.1
     ts-node: ^9.0.0
     ts-node-dev: ^1.0.0
@@ -3180,15 +3179,6 @@ fsevents@~2.1.2:
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
   checksum: bc1649f521e8928cde0e1b349b224de2e6f00b71361a4a44f2e4a615342b6e1ae30366c32d26412dabe74d999a40f79c0ae044ae6b17cf19af935e74d12ea4fa
-  languageName: node
-  linkType: hard
-
-"prettier@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "prettier@npm:2.2.0"
-  bin:
-    prettier: bin-prettier.js
-  checksum: fe7e2ac725d3b067204700c5fcee415a90e1c1ab01735a7748bce791db61a3242939a032bfe5f8faa2c054571f4e9bac266b766e483648511af72f69fb041a6c
   languageName: node
   linkType: hard
 

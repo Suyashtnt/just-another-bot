@@ -31,7 +31,7 @@ export default class DeleteWarnCommand extends Command {
 				msg: string;
 				id: string;
 			}[] = await this.client.userSettings.get(args.user.id, 'warns', null);
-			if (!warnings) return await msg.channel.send("that user doesn't exist lol");
+			if (!warnings) return await msg.channel.send('that user doesn\'t exist lol');
 			const newWarns = warnings.filter((val) => val.id != args.uuid);
 			if (newWarns === warnings)
 				return await msg.channel.send('cannot find that warning!');
