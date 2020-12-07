@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { GuildMember, Message } from 'discord.js';
+import {GuildMember, Message} from 'discord.js';
 
 export default class SuperYeetCommand extends Command {
 	constructor() {
@@ -19,7 +19,7 @@ export default class SuperYeetCommand extends Command {
 			],
 			description: {
 				text: 'bans a user',
-				usage: 'superYeet [user] [reason?]',
+				usage: 'superYeet `[user]` `[reason?]`',
 			},
 			clientPermissions: ['BAN_MEMBERS'],
 			userPermissions: ['BAN_MEMBERS'],

@@ -1,10 +1,11 @@
 import Command from '../../command';
-import { Message, TextChannel } from 'discord.js';
+import {Message, TextChannel} from 'discord.js';
 
 export default class SetupCommand extends Command {
 	constructor() {
 		super('setup', {
 			aliases: ['setup'],
+			userPermissions: ['MANAGE_GUILD'],
 			args: [
 				{
 					id: 'chnl',
@@ -28,11 +29,11 @@ export default class SetupCommand extends Command {
 				},
 			],
 			description: {
-				text: 'sets up the bot',
+				text: 'sets up this bot',
 				usage: 'setup',
 			},
 			channel: 'guild',
-			category: 'misc',
+			category: 'admin',
 		});
 	}
 

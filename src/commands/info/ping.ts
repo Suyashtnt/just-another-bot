@@ -1,12 +1,12 @@
 import Command from '../../command';
-import { Message } from 'discord.js';
+import {Message} from 'discord.js';
 
 export default class PingCommand extends Command {
 	constructor() {
 		super('ping', {
 			aliases: ['ping', 'p'],
 			description: {
-				text: 'gets the bots bing',
+				text: 'gets the ping',
 				usage: 'ping',
 			},
 			category: 'info',
@@ -14,11 +14,12 @@ export default class PingCommand extends Command {
 	}
 
 	async exec(message: Message) {
-		const sent = await message.reply('ping?');
+		const sent = await message.channel.send('ping?');
 		const timeDiff =
 			(sent.editedAt || sent.createdAt).valueOf() -
 			(message.editedAt || message.createdAt).valueOf();
-		return message.reply([
+		await sent.delete();
+		return message.channel.send([
 			'Pong!',
 			`🔂 **RTT**: ${timeDiff} ms`,
 			`💟 **Heartbeat**: ${Math.round(this.client.ws.ping)} ms`,

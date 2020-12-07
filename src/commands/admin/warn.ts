@@ -18,7 +18,7 @@ export default class WarnCommand extends Command {
 			],
 			description: {
 				text: 'warns a user',
-				usage: 'warn [user] [reason]',
+				usage: 'warn `[user]` `[reason]`',
 			},
 			category: 'admin',
 			channel: 'guild',

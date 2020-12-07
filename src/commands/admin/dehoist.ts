@@ -1,14 +1,14 @@
 import Command from '../../command';
-import { Message } from 'discord.js';
+import {Message} from 'discord.js';
 
 export default class DehoistCommand extends Command {
 	constructor() {
 		super('dehoist', {
 			aliases: ['dehoist'],
 			clientPermissions: ['MANAGE_NICKNAMES'],
-			userPermissions: ['ADMINISTRATOR'],
+			userPermissions: ['MANAGE_NICKNAMES'],
 			description: {
-				text: 'removes `!` from the start of all users',
+				text: 'removes `!` from users names',
 				usage: 'dehoist',
 			},
 			category: 'admin',

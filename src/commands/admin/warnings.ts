@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { GuildMember, MessageEmbed } from 'discord.js';
+import {GuildMember, MessageEmbed} from 'discord.js';
 
 export default class WarningsCommand extends Command {
 	constructor() {
@@ -13,8 +13,8 @@ export default class WarningsCommand extends Command {
 			],
 			userPermissions: ['ADMINISTRATOR'],
 			description: {
-				text: 'gets warnings for a user',
-				usage: 'warnings [@user]',
+				text: 'gets all warnings for a member',
+				usage: 'warnings `[@user]`',
 			},
 			category: 'admin',
 		});

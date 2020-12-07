@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { GuildMember, Message } from 'discord.js';
+import {GuildMember, Message} from 'discord.js';
 
 export default class YeetCommand extends Command {
 	constructor() {
@@ -15,12 +15,12 @@ export default class YeetCommand extends Command {
 				{
 					id: 'reason',
 					default: '[no reason]',
-					match: 'content',
+					match: 'restContent',
 				},
 			],
 			description: {
 				text: 'kicks a user',
-				usage: 'yeet [user] [reason?]',
+				usage: 'yeet `[user]` `[reason?]`',
 			},
 			category: 'admin',
 		});

@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { Message, MessageEmbed } from 'discord.js';
+import {Message, MessageEmbed} from 'discord.js';
 import * as api from 'imageapi.js';
 
 export default class RedditCommand extends Command {
@@ -8,8 +8,8 @@ export default class RedditCommand extends Command {
 			aliases: ['subreddit', 'reddit', 'sub'],
 			cooldown: 1000 * 5,
 			description: {
-				text: 'random post from a subreddit',
-				usage: 'reddit [sub]',
+				text: 'gets random post from a subreddit',
+				usage: 'reddit `[sub]`',
 			},
 			args: [
 				{

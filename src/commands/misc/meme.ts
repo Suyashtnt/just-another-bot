@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { Message, MessageEmbed } from 'discord.js';
+import {Message, MessageEmbed} from 'discord.js';
 import * as api from 'imageapi.js';
 
 export default class MemeCommand extends Command {
@@ -8,7 +8,7 @@ export default class MemeCommand extends Command {
 			aliases: ['meme'],
 			cooldown: 1000 * 5,
 			description: {
-				text: 'random m e m e',
+				text: 'random meme',
 				usage: 'meme',
 			},
 			category: 'misc',

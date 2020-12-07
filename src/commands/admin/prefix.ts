@@ -13,10 +13,10 @@ export default class PrefixCommand extends Command {
 			],
 			userPermissions: ['ADMINISTRATOR'],
 			description: {
-				text: 'sets the bots prefix. If `prefix` is empty it sets it to `r!`',
-				usage: 'prefix [prefix?]',
+				text: 'sets the prefix',
+				usage: 'prefix `[prefix?]`',
 			},
-			category: 'misc',
+			category: 'admin',
 			channel: 'guild',
 		});
 	}

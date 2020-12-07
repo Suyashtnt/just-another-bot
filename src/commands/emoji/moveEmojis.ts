@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { Guild, Message } from 'discord.js';
+import {Guild, Message} from 'discord.js';
 import fetch from 'node-fetch';
 
 export default class MoveEmojiCommand extends Command {
@@ -13,8 +13,8 @@ export default class MoveEmojiCommand extends Command {
 				},
 			],
 			description: {
-				text: '~~moves~~ _copies_ all emojis from this server to another',
-				usage: 'moveEmojis [guildId]',
+				text: 'copies all emojis from this server to another',
+				usage: 'moveEmojis `[guildId]`',
 			},
 			clientPermissions: ['MANAGE_EMOJIS'],
 			category: 'emoji',

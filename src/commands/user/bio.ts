@@ -1,13 +1,13 @@
 import Command from '../../command';
-import { User } from 'discord.js';
+import {User} from 'discord.js';
 
 export default class BioCommand extends Command {
 	constructor() {
 		super('userBio', {
 			aliases: ['userBio', 'bio'],
 			description: {
-				usage: 'userBio [get|set] [@user | your new bio]',
-				text: 'gets a users bio or sets your own bio.',
+				usage: 'userBio `[get|set]` `[@user | new bio]`',
+				text: 'gets a bio or sets yours',
 			},
 			args: [
 				{
@@ -26,7 +26,7 @@ export default class BioCommand extends Command {
 					match: 'restContent',
 				},
 			],
-			category: 'misc',
+			category: 'user',
 		});
 	}
 

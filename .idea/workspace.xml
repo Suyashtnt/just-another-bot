@@ -5,18 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb7d5b9-31a7-4900-95d4-139cff3876bc" name="Default Changelist" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/user/profile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/just-another-bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/just-another-bot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/dehoist.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/dehoist.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/admin/deleteWarn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/deleteWarn.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/admin/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/setup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/superyeet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/superyeet.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/admin/warn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/warn.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/warnings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/warnings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/yeet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/yeet.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/emoji/downloadEmoji.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/emoji/downloadEmoji.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/emoji/moveEmoji.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/emoji/moveEmoji.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/emoji/moveEmojis.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/emoji/moveEmojis.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/info/help.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/info/help.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/perms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/perms.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/info/ping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/info/ping.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/info/prefix.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/prefix.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/bio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/user/bio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/embed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/misc/embed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/meme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/misc/meme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/profile.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/misc/subreddit.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/misc/subreddit.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +58,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
@@ -72,6 +83,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="S:\projects\just-another-bot\src\commands\admin" />
+      <recent name="S:\projects\just-another-bot\src\commands\user" />
       <recent name="S:\projects\just-another-bot\src\commands\misc" />
       <recent name="S:\projects\just-another-bot\src\commands\info" />
       <recent name="S:\projects\just-another-bot\src\commands\emoji" />
@@ -190,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607327666873</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat(Style): remove prettier because eslint is better in this case">
+      <created>1607328444261</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607328444261</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +244,12 @@
     <MESSAGE value="chore(Codebase): eslint" />
     <MESSAGE value="chore(Codebase): more eslint and spellcheck" />
     <MESSAGE value="feat(Style): YEET prettier because eslint is better in this case" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Style): YEET prettier because eslint is better in this case" />
+    <MESSAGE value="feat(Style): YEET prettier because eslint is better in this case x2" />
+    <MESSAGE value="feat(Style): remove prettier because eslint is better in this case" />
+    <MESSAGE value="yes" />
+    <MESSAGE value="redo alot of things" />
+    <MESSAGE value="feat(Commands): redo all command descs and help command." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Commands): redo all command descs and help command." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

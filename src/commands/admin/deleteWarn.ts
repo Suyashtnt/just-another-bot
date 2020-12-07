@@ -1,5 +1,5 @@
 import Command from '../../command';
-import { GuildMember } from 'discord.js';
+import {GuildMember} from 'discord.js';
 
 export default class DeleteWarnCommand extends Command {
 	constructor() {
@@ -15,9 +15,9 @@ export default class DeleteWarnCommand extends Command {
 				},
 			],
 			description: {
-				usage: 'dw [@user] [uuid]',
+				usage: 'dw `[@user]` `[uuid]`',
 				text:
-					'deletes a warnings from a user. Get the UUID from the warnings command',
+					'deletes a warning from a user',
 			},
 			category: 'admin',
 			userPermissions: ['ADMINISTRATOR'],
