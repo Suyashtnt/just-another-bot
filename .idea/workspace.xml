@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4cb7d5b9-31a7-4900-95d4-139cff3876bc" name="Default Changelist" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/client.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607350573391</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat(Client): make ignoreCooldown a 1 liner">
+      <created>1607354800173</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607354800173</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +270,8 @@
     <MESSAGE value="feat(HelpCommand): add a reaction to delete the message&#10;chore(Deps): update deps&#10;feat(Yarn): add ts plugin for types adding" />
     <MESSAGE value="feat(Package): use yarn PnP&#10;&#10;GOOD BYE NODE_MODULES" />
     <MESSAGE value="feat(EverythingIGuess): random things" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(EverythingIGuess): random things" />
+    <MESSAGE value="feat(Client): make ignoreCooldown a 1 liner" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Client): make ignoreCooldown a 1 liner" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
