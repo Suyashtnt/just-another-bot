@@ -1,6 +1,6 @@
-import {log} from 'console';
+import { log } from 'console';
 import Command from '../../command';
-import {BaseGuildEmoji, Guild, Message} from 'discord.js';
+import { BaseGuildEmoji, Guild, Message } from 'discord.js';
 import fetch from 'node-fetch';
 
 export default class MoveEmojiCommand extends Command {

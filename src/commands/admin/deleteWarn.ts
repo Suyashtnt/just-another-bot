@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {GuildMember} from 'discord.js';
+import { GuildMember } from 'discord.js';
 
 export default class DeleteWarnCommand extends Command {
 	constructor() {
@@ -16,8 +16,7 @@ export default class DeleteWarnCommand extends Command {
 			],
 			description: {
 				usage: 'dw `[@user]` `[uuid]`',
-				text:
-					'deletes a warning from a user',
+				text: 'deletes a warning from a user',
 			},
 			category: 'moderation',
 			userPermissions: ['ADMINISTRATOR'],
@@ -31,7 +30,7 @@ export default class DeleteWarnCommand extends Command {
 				msg: string;
 				id: string;
 			}[] = await this.client.userSettings.get(args.user.id, 'warns', null);
-			if (!warnings) return await msg.channel.send('that user doesn\'t exist lol');
+			if (!warnings) return await msg.channel.send("that user doesn't exist lol");
 			const newWarns = warnings.filter((val) => val.id != args.uuid);
 			if (newWarns === warnings)
 				return await msg.channel.send('cannot find that warning!');

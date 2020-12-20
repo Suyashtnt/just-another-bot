@@ -1,5 +1,5 @@
-import {Listener} from 'discord-akairo';
-import {Guild} from 'discord.js';
+import { Listener } from 'discord-akairo';
+import { Guild } from 'discord.js';
 
 export default class GuildListener extends Listener {
 	public constructor() {

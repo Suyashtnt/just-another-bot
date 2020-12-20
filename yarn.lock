@@ -436,6 +436,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/prettier@npm:^2":
+  version: 2.1.5
+  resolution: "@types/prettier@npm:2.1.5"
+  checksum: bc6271235d881fa49b2f03e8e9242a7be8ecbcdcffeb7e31347afd0343f5f5e372ce65fe257e44254156737935c9249c9722cbe991dfad9aab72056c6acdbdaa
+  languageName: node
+  linkType: hard
+
 "@types/responselike@npm:*, @types/responselike@npm:^1.0.0":
   version: 1.0.0
   resolution: "@types/responselike@npm:1.0.0"
@@ -2852,6 +2859,7 @@ fsevents@~2.1.2:
     "@types/mongoose": ^5.10.2
     "@types/node": ^14.14.10
     "@types/node-fetch": ^2.5.7
+    "@types/prettier": ^2
     "@types/uuid": ^8.3.0
     "@typescript-eslint/eslint-plugin": ^4.9.0
     "@typescript-eslint/parser": ^4.9.0
@@ -2865,6 +2873,7 @@ fsevents@~2.1.2:
     luxon: ^1.25.0
     mongoose: 5.10.19
     node-fetch: ^2.6.1
+    prettier: ^2.2.1
     reddit: ^1.2.1
     ts-node: ^9.1.0
     ts-node-dev: ^1.0.0
@@ -3787,6 +3796,15 @@ fsevents@~2.1.2:
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
   checksum: bc1649f521e8928cde0e1b349b224de2e6f00b71361a4a44f2e4a615342b6e1ae30366c32d26412dabe74d999a40f79c0ae044ae6b17cf19af935e74d12ea4fa
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "prettier@npm:2.2.1"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 92c6c9f4b87eba1f28466edee57dd18c80d00b858edda77d46d1950d20e6e302b68ee255fc91133ba931e63c4577b5ae30da194d9626a8f3c0177778b91bf056
   languageName: node
   linkType: hard
 

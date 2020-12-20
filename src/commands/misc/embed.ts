@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {ColorResolvable, Message, MessageEmbed} from 'discord.js';
+import { ColorResolvable, Message, MessageEmbed } from 'discord.js';
 
 export default class EmbedCommand extends Command {
 	constructor() {

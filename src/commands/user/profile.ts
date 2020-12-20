@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {GuildMember, Message, MessageEmbed} from 'discord.js';
+import { GuildMember, Message, MessageEmbed } from 'discord.js';
 
 export default class ProfileCommand extends Command {
 	constructor() {
@@ -13,15 +13,15 @@ export default class ProfileCommand extends Command {
 				{
 					id: 'member',
 					type: 'member',
-					default: msg => msg.member
-				}
+					default: (msg) => msg.member,
+				},
 			],
 			category: 'user',
 			channel: 'guild',
 		});
 	}
 
-	async exec(msg: Message, {member}: { member: GuildMember }) {
+	async exec(msg: Message, { member }: { member: GuildMember }) {
 		const user = member.user;
 		const embed = new MessageEmbed()
 			.setTitle(`${user.username}'s profile`)

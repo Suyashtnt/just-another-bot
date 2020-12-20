@@ -25,7 +25,7 @@ export default class Perms extends Listener {
 
 		await message.channel.send(
 			`${
-				type === 'client' ? 'I\'m' : 'You\'re'
+				type === 'client' ? "I'm" : "You're"
 			} missing the following perms needed to run \`${
 				command.aliases[0]
 			}\`: ${casedPerms}`,

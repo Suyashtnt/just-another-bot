@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {GuildMember, Message} from 'discord.js';
+import { GuildMember, Message } from 'discord.js';
 
 export default class SuperYeetCommand extends Command {
 	constructor() {

@@ -1,6 +1,6 @@
 import Command from '../../command';
-import {v4 as uuid} from 'uuid';
-import {GuildMember, Message} from 'discord.js';
+import { v4 as uuid } from 'uuid';
+import { GuildMember, Message } from 'discord.js';
 
 export default class WarnCommand extends Command {
 	constructor() {
@@ -34,20 +34,20 @@ export default class WarnCommand extends Command {
 				'warns',
 				oldWarns
 					? [
-						...oldWarns,
-						{
-							guildId: args.user.guild.id,
-							msg: args.info,
-							id: uuid(),
-						},
-					]
+							...oldWarns,
+							{
+								guildId: args.user.guild.id,
+								msg: args.info,
+								id: uuid(),
+							},
+					  ]
 					: [
-						{
-							guildId: args.user.guild.id,
-							msg: args.info,
-							id: uuid(),
-						},
-					],
+							{
+								guildId: args.user.guild.id,
+								msg: args.info,
+								id: uuid(),
+							},
+					  ],
 			)
 			.catch(msg.channel.send);
 		await msg.channel.send('Done');

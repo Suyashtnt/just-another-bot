@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {GuildMember, MessageEmbed} from 'discord.js';
+import { GuildMember, MessageEmbed } from 'discord.js';
 
 export default class WarningsCommand extends Command {
 	constructor() {

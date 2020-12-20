@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {Message} from 'discord.js';
+import { Message } from 'discord.js';
 
 export default class DehoistCommand extends Command {
 	constructor() {
@@ -31,7 +31,7 @@ export default class DehoistCommand extends Command {
 									: member.displayName.split('! ')[1],
 							);
 						} catch (e) {
-							msg.channel.send(`Oh no! ${e}`)
+							msg.channel.send(`Oh no! ${e}`);
 						}
 					}
 				}),

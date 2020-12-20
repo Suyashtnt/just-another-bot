@@ -1,5 +1,5 @@
 import Command from '../../command';
-import {User} from 'discord.js';
+import { User } from 'discord.js';
 
 export default class BioCommand extends Command {
 	constructor() {
