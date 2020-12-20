@@ -6,6 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4cb7d5b9-31a7-4900-95d4-139cff3876bc" name="Default Changelist" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/sdks/integrations.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/sdks/integrations.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/deleteWarn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/deleteWarn.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/superyeet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/superyeet.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/warn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/warn.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/warnings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/warnings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/admin/yeet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/admin/yeet.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/head-first-reactive-with-spring-and-reactor/stock-quotes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -72,17 +80,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -113,6 +110,8 @@
       <workItem from="1607012422208" duration="7980000" />
       <workItem from="1607110357566" duration="39000" />
       <workItem from="1607259380954" duration="11167000" />
+      <workItem from="1607510531854" duration="274000" />
+      <workItem from="1607510885418" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1607069449564</created>
@@ -245,6 +244,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />

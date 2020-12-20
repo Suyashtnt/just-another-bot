@@ -19,7 +19,7 @@ export default class DeleteWarnCommand extends Command {
 				text:
 					'deletes a warning from a user',
 			},
-			category: 'admin',
+			category: 'moderation',
 			userPermissions: ['ADMINISTRATOR'],
 		});
 	}

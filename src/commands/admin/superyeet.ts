@@ -23,7 +23,7 @@ export default class SuperYeetCommand extends Command {
 			},
 			clientPermissions: ['BAN_MEMBERS'],
 			userPermissions: ['BAN_MEMBERS'],
-			category: 'admin',
+			category: 'moderation',
 		});
 	}
 

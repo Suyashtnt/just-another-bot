@@ -22,7 +22,7 @@ export default class YeetCommand extends Command {
 				text: 'kicks a user',
 				usage: 'yeet `[user]` `[reason?]`',
 			},
-			category: 'admin',
+			category: 'moderation',
 		});
 	}
 

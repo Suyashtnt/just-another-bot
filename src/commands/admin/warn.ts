@@ -20,7 +20,7 @@ export default class WarnCommand extends Command {
 				text: 'warns a user',
 				usage: 'warn `[user]` `[reason]`',
 			},
-			category: 'admin',
+			category: 'moderation',
 			channel: 'guild',
 			userPermissions: ['ADMINISTRATOR'],
 		});

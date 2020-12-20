@@ -16,7 +16,7 @@ export default class WarningsCommand extends Command {
 				text: 'gets all warnings for a member',
 				usage: 'warnings `[@user]`',
 			},
-			category: 'admin',
+			category: 'moderation',
 		});
 	}
 
