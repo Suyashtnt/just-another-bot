@@ -26,9 +26,9 @@ export default class DehoistCommand extends Command {
 					if (member.displayName.startsWith('!')) {
 						try {
 							await member.setNickname(
-								member.displayName.startsWith('!')
-									? member.displayName.split('!')[1]
-									: member.displayName.split('! ')[1],
+								member.displayName.startsWith('!' )
+									? member.displayName.split('! ')[1]
+									: member.displayName.split('!')[1],
 							);
 						} catch (e) {
 							msg.channel.send(`Oh no! ${e}`)
